@@ -72,3 +72,46 @@ section {
         margin-top: 0px;
     }
 }
+
+.spaceship-2{
+    width: 100px;
+    display: inline-block;
+    transform: translateY(100px);
+}
+
+.spaceship-2-section{
+    background: transparent url("../img/kasei-valles-canyons.jpg") no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.js-spaceship-2-fade {
+    -webkit-animation: spaceship-2-fade 1s linear forwards;
+   
+}
+
+@-webkit-keyframes spaceship-2-fade {
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/*.spaceship-2:nth-child(2).js-spaceship-2-fade,
+.spaceship-2:nth-child(4).js-spaceship-2-fade{
+    -webkit-animation: spaceship-2-fade 1.5s linear forwards; 
+}
+
+*/
+
+.spaceship-2:nth-child(2),
+.spaceship-2:nth-child(4) {
+    -webkit-animation-delay: 300ms; 
+}
+
+
+
